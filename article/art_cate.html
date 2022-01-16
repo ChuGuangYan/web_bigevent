@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css" />
+    <link rel="stylesheet" href="/assets/css/article/art_cate.css" />
+  </head>
+  <body>
+    <!-- 卡片区域 -->
+    <div class="layui-card">
+      <div class="layui-card-header">
+        <span>文章类别管理</span>
+        <button type="button" class="layui-btn layui-btn-normal layui-btn-sm" id="btnAddCate">添加类别</button>
+      </div>
+      <div class="layui-card-body">
+          <table class="layui-table">
+              <colgroup>
+                <col width="150">
+                <col width="200">
+                <col>
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>分类名称</th>
+                  <th>分类别名</th>
+                  <th>操作</th>
+                </tr> 
+              </thead>
+              <tbody>
+                <tr>
+                  <td>最新</td>
+                  <td>zuixin</td>
+                  <td>人生就像是一场修行</td>
+                </tr>
+                <tr>
+                  <td>科技</td>
+                  <td>keji</td>
+                  <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
+                </tr>
+                <tr>
+                    <td>股市</td>
+                    <td>gushi</td>
+                    <td>人生就像是一场修行</td>
+                  </tr>
+                  <tr>
+                      <td>历史</td>
+                      <td>shili</td>
+                      <td>人生就像是一场修行</td>
+                    </tr>
+                    <tr>
+                        <td>情感</td>
+                        <td>qinggan</td>
+                        <td>人生就像是一场修行</td>
+                      </tr>
+              </tbody>
+            </table>
+      </div>
+    </div>
+
+   
+    <!-- 导入 layui 的js -->
+    <script src="/assets/lib/layui/layui.all.js"></script>
+    <!-- 导入 jQuery -->
+    <script src="/assets/lib/jquery.js"></script>
+    <!-- 导入 baseAPI -->
+    <script src="/assets/js/baseAPI.js"></script>
+    <!-- 导入模板引擎 -->
+    <script src="/assets/lib/template-web.js"></script>
+    <!-- 导入自己的 js -->
+    <script src="/assets/js/article/art_cate.js"></script>
+  </body>
+</html>

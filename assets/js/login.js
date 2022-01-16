@@ -24,7 +24,10 @@ $(() => {
       }
     }
   })
+<<<<<<< HEAD
 
+=======
+>>>>>>> user
   //监听注册表单的提交时间
   $('#form_reg').on('submit', function (e) {
     //阻止默认行为
@@ -39,6 +42,7 @@ $(() => {
         return layer.msg(res.message);
       }
       layer.msg('注册成功,请登入');
+<<<<<<< HEAD
       console.log(res);
       //手动模拟'登入'点击行为
       $('#link_login').click()
@@ -48,13 +52,22 @@ $(() => {
 
 
 
+=======
+      // console.log(res);
+      //手动模拟'登入'点击行为
+      $('#link_login').click()
+    })
+>>>>>>> user
   })
   //监听登录表单行为
   $('#form_login').on('submit', function (e) {
     //阻止默认行为
     e.preventDefault()
+<<<<<<< HEAD
     console.log(123);
 
+=======
+>>>>>>> user
     $.ajax({
       url: '/api/login',
       method: 'POST',
@@ -74,4 +87,19 @@ $(() => {
     })
   })
 
+<<<<<<< HEAD
 })
+=======
+
+
+
+
+
+
+
+
+
+
+
+})
+>>>>>>> user

@@ -50,4 +50,8 @@ function rederAvatar(user) {
     let first = name[0].toUpperCase()
     $('.text-avatar').html(first).show()
   }
+<<<<<<< HEAD
 }
+=======
+} 
+>>>>>>> user
