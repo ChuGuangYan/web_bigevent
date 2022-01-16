@@ -28,9 +28,9 @@ $(function() {
     }
 
     // 1. 拿到用户选择的文件
-    var file = e.target.files[0]
+    let file = e.target.files[0]
     // 2. 将文件，转化为路径
-    var imgURL = URL.createObjectURL(file)
+    let imgURL = URL.createObjectURL(file)
     // 3. 重新初始化裁剪区域
     $image
       .cropper('destroy') // 销毁旧的裁剪区域
@@ -41,7 +41,7 @@ $(function() {
   // 为确定按钮，绑定点击事件
   $('#btnUpload').on('click', function() {
     // 1. 要拿到用户裁剪之后的头像
-    var dataURL = $image
+    let dataURL = $image
       .cropper('getCroppedCanvas', {
         // 创建一个 Canvas 画布
         width: 100,
