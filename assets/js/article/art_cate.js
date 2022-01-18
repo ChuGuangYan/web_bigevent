@@ -38,6 +38,7 @@ $(function() {
         if (res.status !== 0) {
           return layer.msg('新增分类失败！')
         }
+        //重新渲染页面
         initArtCateList()
         layer.msg('新增分类成功！')
         // 根据索引，关闭对应的弹出层
@@ -63,6 +64,9 @@ $(function() {
       method: 'GET',
       url: '/my/article/cates/' + id,
       success: function(res) {
+        console.log(res);
+        console.log(res.data);
+        //先渲染出来原来的数据
         form.val('form-edit', res.data)
       }
     })
